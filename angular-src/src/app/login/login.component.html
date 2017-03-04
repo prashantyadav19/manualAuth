@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="form-signin-heading">Please sign in</h2>
+  </div>
+  <div class="panel-body">
+    <form class="form-signin" (submit)="onLoginSubmit()">
+      <div class="form-group">
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" id="inputEmail" [(ngModel)]="username" name="username" class="form-control" placeholder="Username" required autofocus>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" [(ngModel)]="password" name="password" class="form-control" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </div>
+    </form>
+  </div>
+</div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+
